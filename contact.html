@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Kiran Niure</title>
+    <meta name="description" content="Get in touch with Kiran Niure for IT consultation, system administration, and server management opportunities.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="js/components.js" defer></script>
+</head>
+<body>
+    <site-navbar></site-navbar>
+
+    <main class="section-alt">
+        <section class="section">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 3rem;">
+                    <h1>Get In Touch</h1>
+                    <p>Have a question or want to work together? Leave a message below.</p>
+                </div>
+                
+                <div class="contact-form">
+                    <!-- Note: For static sites (e.g. Cloudflare Pages), point the form to a handling service like Formspree -->
+                    <form action="#" method="POST" onsubmit="alert('Form submission simulation successful!'); return false;">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" name="name" class="form-input" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-input" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-input" required placeholder="Project Inquiry">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-input" required placeholder="How can I help you?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <site-footer></site-footer>
+</body>
+</html>
